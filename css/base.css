@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+li{
+    list-style: none;
+}
+input{
+    border: 0;
+    outline: none;
+}
+img{
+    vertical-align: middle;
+}
+i{
+    font-style: normal;
+}

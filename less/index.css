@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  font-size: 26.6667vw;
+}
+body {
+  background: #fff;
+  font-size: 0.14rem;
+  font-family: -apple-system, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+  outline: none;
+}
+img {
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 2;
+}
+#header .left {
+  width: 0.8rem;
+  height: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .left a {
+  background: url(../images/sprites.png);
+  background-size: 2rem 2rem;
+  background-position: 0 -1.1rem;
+  width: 0.58rem;
+  height: 0.21rem;
+  display: block;
+}
+#header .center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+#header .center form {
+  width: 100%;
+  position: relative;
+}
+#header .center form i {
+  width: 0.21rem;
+  height: 0.21rem;
+  background-image: url(../images/sprites.png);
+  background-size: 2rem 2rem;
+  background-position: -0.58rem -1.1rem;
+  position: absolute;
+  left: 0.05rem;
+  top: 0.06rem;
+}
+#header .center form input {
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  padding-left: 0.3rem;
+}
+#header .right {
+  width: 0.5rem;
+  height: 0.4rem;
+}
+#header .right a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+}
+#slide img {
+  width: 100%;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 25%;
+}
+#nav ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.05rem 0;
+}
+#nav ul li a img {
+  width: 0.4rem;
+}
+#nav ul li a p {
+  margin-top: 0.05rem;
+}
+#main {
+  background: #ccc;
+  padding: 0.1rem;
+  padding-bottom: 0.6rem;
+}
+#main .seckill {
+  background: #fff;
+}
+#main .seckill .title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.3rem;
+}
+#main .seckill .title .left {
+  display: flex;
+}
+#main .seckill .title .left .seckill-icon {
+  width: 0.2rem;
+  height: 0.25rem;
+  margin-left: 0.05rem;
+}
+#main .seckill .title .left .seckill-name {
+  margin-left: 0.05rem;
+  color: #e93b3d;
+}
+#main .seckill .title .left .seckill-downtime {
+  margin-left: 0.05rem;
+}
+#main .seckill .title .left .seckill-downtime span:not(:nth-child(3n)) {
+  display: inline-block;
+  width: 0.15rem;
+  height: 0.15rem;
+  line-height: 0.15rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+#main .seckill .title .right .seckill-more {
+  margin-right: 0.1rem;
+}
+#main .seckill .content ul {
+  display: flex;
+}
+#main .seckill .content ul li {
+  flex: 1;
+}
+#main .seckill .content ul li a {
+  display: block;
+  text-align: center;
+}
+#main .seckill .content ul li a img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+#main .seckill .content ul li a p {
+  text-align: center;
+  color: #e93b3d;
+  font-size: 0.12rem;
+}
+#main .seckill .content ul li a p del {
+  color: #ccc;
+}
+#main .seckill .content ul li ~ li {
+  border-left: 0.01rem solid #ccc;
+}
+#main .market {
+  background-color: #fff;
+  margin-top: 0.1rem;
+}
+#main .market .title {
+  border-bottom: 0.01rem solid #ccc;
+}
+#main .market .title > h4 {
+  line-height: 0.3rem;
+  padding-left: 0.3rem;
+  font-weight: normal;
+  position: relative;
+}
+#main .market .title h4::before {
+  content: '';
+  position: absolute;
+  width: 0.04rem;
+  height: 0.14rem;
+  left: 0.2rem;
+  top: 0.07rem;
+  background-color: #e93b3d;
+}
+#main .market .content {
+  display: flex;
+}
+#main .market .content .left {
+  width: 50%;
+}
+#main .market .content .left a {
+  display: block;
+}
+#main .market .content .left a img {
+  width: 100%;
+}
+#main .market .content .right {
+  width: 50%;
+}
+#main .market .content .right a {
+  display: block;
+}
+#main .market .content .right a img {
+  width: 100%;
+}
+#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25%;
+}
+#footer ul li a {
+  display: block;
+  text-align: center;
+}
+#footer ul li a img {
+  width: 0.65rem;
+  height: 0.5rem;
+}
